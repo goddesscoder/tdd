@@ -7,7 +7,7 @@ Students MUST EDIT this module, to add more tests to run
 against the 'echo.py' program.
 """
 
-__author__ = "Bethsheba Zebata and Johns Saturday Study Hall"
+__author__ = "Bethsheba Zebata and Johns  Study Hall, Vince St.Louis also"
 
 import sys
 import importlib
@@ -121,19 +121,15 @@ class TestEcho(unittest.TestCase):
         self.assertEqual(output[0], "Hello World")
 
     def test_help_message(self):
-        args = []
-        result = 'usage: echo.py [-h][-l][-u][-t] text'
+        args = ["-h"]
+        result = 'usage: echo.py [-h] [-l] [-u] [-t] text'
         output = run_capture(self.module.__file__, args)
         self.assertEqual(output[0], result)
-
-    def test_flake8(self):
-        result = subprocess.run(['flake8', self.module.__file__])
-        self.assertEqual(result.returncode, 0)
-
     #
     # Students: add an __author__ test here.
     # You may borrow some test code from previous assignments!
     #
+
     def test_author(self):
         """Checking for __author__ string"""
         self.assertNotEqual(self.module.__author__, '???')
