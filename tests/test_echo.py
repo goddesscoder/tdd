@@ -7,7 +7,7 @@ Students MUST EDIT this module, to add more tests to run
 against the 'echo.py' program.
 """
 
-__author__ = "Bethsheba Zebata and Johns  Study Hall, Vince St.Louis also"
+__author__ = "Bethsheba Zebata, Johns Study Hall, Vince St.Louis"
 
 import sys
 import importlib
